@@ -20,12 +20,15 @@ then
       npm install react
       npm install react-dom
       # node module installs end
+      # client directory start
       mkdir client
       cd client
         mkdir public
         cd public
           touch index.html
           cd ..
+      # client directory end
+      # src directory start
         mkdir src
         cd src
           touch index.js
@@ -35,15 +38,20 @@ then
             cd ..
           cd ..
         cd ..
+      # src directory end
+      # server directory start
       mkdir server
       cd server
         touch index.js
         cd ..
+      # server directory end
+      # global files start
       touch .gitignore
         echo "## MAC files ##" >> .gitignore
         echo ".DS_Store" >> .gitignore
       touch webpack.config.js
-      echo "finished!"    
+      echo "finished!"
+      # global files end
     else
     echo "please come back when you are ready"
     fi
